@@ -13,6 +13,7 @@ const Highlights = () => {
       y: 0,
       scrollTrigger: {
         trigger: '#title',
+        toggleActions: 'play none none reverse',
         start: 'top 85%',
       }
     })
@@ -24,6 +25,7 @@ const Highlights = () => {
       stagger: 0.25,
       scrollTrigger: {
         trigger: '.link',
+        toggleActions: 'play none none reverse',
         start: 'top 85%',
       }
     })
