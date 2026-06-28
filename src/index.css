@@ -122,7 +122,7 @@ canvas {
   }
 
   .video-carousel_container {
-    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh] rounded-2xl sm:rounded-3xl shadow-2xl
+    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh] rounded-lg sm:rounded-3xl shadow-2xl
   }
 
   .g_fadeIn {
