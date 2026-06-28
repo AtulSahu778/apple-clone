@@ -40,7 +40,12 @@ const Hero = () => {
           </div>
         </div>
         <div id="cta" className="flex flex-col items-center opacity-0 translate-y-20 px-5">
-          <a href="#highlights" className="btn">Buy</a>
+          <button 
+            onClick={() => document.getElementById('highlights')?.scrollIntoView({ behavior: 'smooth' })} 
+            className="btn"
+          >
+            Buy
+          </button>
           <p className="font-normal text-sm sm:text-base md:text-xl text-center">
             From ₹119900.00* or ₹4912.00/mo. for 24 mo.‡
           </p>

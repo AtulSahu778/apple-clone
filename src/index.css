@@ -10,6 +10,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   background: #000;
   border-color: #3b3b3b;
   user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 canvas {
@@ -44,19 +46,19 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue text-sm sm:text-base
+    @apply px-5 py-2 rounded-full bg-blue my-5 border border-transparent text-sm sm:text-base font-medium transition-all duration-300 hover:bg-transparent hover:border-blue hover:text-blue
   }
 
   .color-container {
-    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-300 backdrop-blur
+    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-300 backdrop-blur-md
   }
 
   .size-btn-container {
-    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1
+    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur-md ml-3 gap-1
   }
 
   .size-btn {
-    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all
+    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all duration-300
   }
 
   .common-padding {
@@ -64,19 +66,19 @@ canvas {
   }
 
   .section-heading {
-    @apply text-gray lg:text-6xl md:text-5xl text-2xl sm:text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
+    @apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-semibold opacity-0 translate-y-20 tracking-tight
   }
 
   .feature-text {
-    @apply text-gray max-w-md text-base sm:text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+    @apply text-gray max-w-md text-base sm:text-lg md:text-xl font-medium opacity-0 translate-y-[100px] leading-relaxed
   }
 
   .feature-text-container {
-    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-8 sm:gap-12
   }
 
   .feature-video {
-    @apply w-full h-full object-cover object-center scale-150 opacity-0
+    @apply w-full h-full object-cover object-center scale-150 opacity-0 rounded-2xl sm:rounded-3xl
   }
 
   .feature-video-container {
@@ -84,23 +86,23 @@ canvas {
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-base sm:text-xl opacity-0 translate-y-20
+    @apply text-blue hover:underline cursor-pointer flex items-center text-base sm:text-xl opacity-0 translate-y-20 font-medium transition-all duration-300 hover:opacity-80
   }
 
   .control-btn {
-    @apply ml-4 p-3 sm:p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+    @apply ml-4 p-3 sm:p-4 rounded-full bg-gray-300 backdrop-blur-md flex-center transition-transform duration-300 hover:scale-105
   }
 
   .hero-title {
-    @apply text-center font-semibold text-2xl sm:text-3xl md:text-5xl text-gray-100 opacity-0 max-md:mb-10
+    @apply text-center font-semibold text-3xl sm:text-4xl md:text-5xl text-gray-100 opacity-0 max-md:mb-10 tracking-tight
   }
 
   .hiw-title {
-    @apply text-3xl sm:text-4xl md:text-7xl font-semibold text-center
+    @apply text-3xl sm:text-4xl md:text-7xl font-bold text-center tracking-tighter leading-tight
   }
 
   .hiw-subtitle {
-    @apply text-gray font-semibold text-lg sm:text-xl md:text-2xl py-6 sm:py-10 text-center
+    @apply text-gray font-medium text-lg sm:text-xl md:text-2xl py-6 sm:py-10 text-center tracking-tight
   }
 
   .hiw-video {
@@ -112,15 +114,15 @@ canvas {
   }
 
   .hiw-text {
-    @apply text-gray text-base sm:text-xl font-normal md:font-semibold
+    @apply text-gray text-base sm:text-xl font-medium leading-relaxed
   }
 
   .hiw-bigtext {
-    @apply text-white text-2xl sm:text-3xl md:text-5xl font-normal md:font-semibold my-2
+    @apply text-white text-2xl sm:text-3xl md:text-5xl font-semibold my-2 tracking-tight
   }
 
   .video-carousel_container {
-    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
+    @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh] rounded-2xl sm:rounded-3xl shadow-2xl
   }
 
   .g_fadeIn {
