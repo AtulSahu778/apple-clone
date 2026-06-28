@@ -15,10 +15,10 @@ const Highlights = () => {
 
 
   return (
-    <section id="highlights" className="w-screen overflow-hidden h-full common-padding bg-zinc">
+    <section id="highlights" className="w-full overflow-hidden h-full common-padding bg-zinc">
       <div className="screen-max-width">
 
-        <div className="mb-12 w-full md: flex items-end justify-between">
+        <div className="mb-12 w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-5">
           <h1 id="title" className="section-heading">Get the highlights.</h1>
           <div className="flex flex-wrap items-end gap-5">
             <p className="link">

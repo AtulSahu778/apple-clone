@@ -157,7 +157,7 @@ const VideoCarousel = () => {
 
   return (
     <>
-      <div className="flex items-center">
+      <div className="flex items-center overflow-hidden">
         {hightlightsSlides.map((list, i) => (
           <div key={list.id} id="slider" className="sm:pr-20 pr-10">
             <div className="video-carousel_container">
@@ -165,9 +165,7 @@ const VideoCarousel = () => {
                 <video
                   id="video"
                   playsInline={true}
-                  className={`${
-                    list.id === 2 && "translate-x-44"
-                  } pointer-events-none`}
+                  className={`pointer-events-none`}
                   preload="auto"
                   muted
                   ref={(el) => (videoRef.current[i] = el)}
