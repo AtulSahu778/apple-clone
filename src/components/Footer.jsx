@@ -17,9 +17,7 @@ const Footer = () => {
             </span>{' '}
             near you.
           </p>
-          <p className="font-semibold text-gray text-xs mt-1">
-            Or call 93419368##
-          </p>
+          
         </div>
 
         <div className="bg-neutral-700 my-5 h-[1px] w-full" />
